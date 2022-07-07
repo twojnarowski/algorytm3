@@ -21,7 +21,7 @@
         int liczba = Convert.ToInt32(numer);
         for (int i = 2; i < Math.Sqrt(liczba); i++)
         {
-            if (Math.DivRem(liczba, i).Remainder == 0)
+            if (liczba % i == 0)
             {
                 isPierwsza = false;
                 break;
